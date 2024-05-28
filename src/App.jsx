@@ -1,9 +1,18 @@
 import LayoutBox from "./sections/LayoutBox"
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 export default function App() {
   return (
-    // <Sidebar />
-    <section className="bg-[#eceeff]">
+    <section>
+  <section>
+      <Navbar />
+  </section>
+  <section>
       <LayoutBox />
-    </section> 
+  </section>
+  <section>
+      <Footer />
+  </section>
+  </section>
   )
 }

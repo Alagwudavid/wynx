@@ -7,5 +7,11 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  corePlugins: {
+    aspectRatio: false,
+  },
+  plugins: [
+    require('@headlessui/tailwindcss')({ prefix: 'ui' }),
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }

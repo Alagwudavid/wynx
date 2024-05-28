@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+  .active-web {
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 3px;
+}
+}
