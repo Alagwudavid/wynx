@@ -1,6 +1,6 @@
 import { Fragment, useState } from 'react'
-import LogoXl from '../assets/logoText1.svg'
-import LogoSm from '../assets/logoText.svg'
+import LogoXl from '../assets/logoTextb.svg'
+import LogoXlWhite from '../assets/logoTextw.svg'
 import { navigation } from "./constants"
 import {
   Disclosure,
@@ -30,14 +30,14 @@ export default function Navbar() {
   }
   window.addEventListener("scroll", setFixed)
   return (
-    <Disclosure as="nav" className={`${fix ? 'bg-white' : 'bg-transparent'} fixed w-full z-50`}>
+    <Disclosure as="nav" className={`${fix ? 'bg-white' : 'bg-transparent'} fixed w-full z-50 transition duration-500 ease-in-out`}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <DisclosureButton className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <DisclosureButton className={`relative inline-flex items-center justify-center rounded-md p-2 ${fix ? 'text-black' : 'text-white'} hover:bg-gray-700 hover:text-white`}>
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -50,15 +50,9 @@ export default function Navbar() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="sm:hidden block h-8 w-auto"
-                    src={LogoSm}
+                    className="h-8 w-auto"
+                    src={fix ? LogoXl : LogoXlWhite}
                     alt="Wynx Services Inc."
-                  />
-                  <img
-                    className=" hidden sm:block h-8 w-auto"
-                    src={LogoXl}
-                    alt="Wynx Services Inc."
-                    aria-hidden='true'
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
@@ -69,7 +63,7 @@ export default function Navbar() {
                         href={item.href}
                         className={classNames(
                           item.current ? 'bg-black text-white' : 'text-black hover:bg-black hover:text-white transition duration-700 ease-in-out',
-                          'rounded-md px-3 py-2 text-sm font-medium'
+                          'rounded-md px-3 py-2 text-sm font-medium', fix ? 'text-black' : 'text-white'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -82,7 +76,7 @@ export default function Navbar() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               <a
                 href="./"
-                className='text-black hover:bg-black hover:text-white transition duration-700 ease-in-out rounded-md px-2 py-1 text-lg font-medium sm:block hidden'
+                className={`${fix ? 'text-black' : 'text-white'} hover:bg-black hover:text-white transition duration-700 ease-in-out rounded-md px-2 py-1 text-md font-medium sm:block hidden`}
                 >Hire us!</a>
 
                 {/* Profile dropdown */}
@@ -150,7 +144,7 @@ export default function Navbar() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    item.current ? 'bg-gray-900 text-white' : `${fix ? 'text-black' : 'text-white'} hover:bg-gray-700 hover:text-white`,
                     'block rounded-md px-3 py-2 text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}

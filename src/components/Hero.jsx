@@ -1,27 +1,54 @@
-// import landingSm from '../assets/landing_lg.png'
+import React, { useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { } from '@fortawesome/free-solid-svg-icons';
 import { socials } from './constants';
+import Sidebar from "./Sidebar"
 import { TypeAnimation } from 'react-type-animation';
+import Astronaut from "../assets/AstronautAnimation.json";
+import AnimationWavingHand from "../assets/AnimationWavingHand.json";
+import Lottie from "lottie-react";
+import { motion } from "framer-motion"
 const Hero = () => {
+    const lottieRef = useRef(null);
+    const [paused, setPaused] = useState(false);
+  
+    const handlePause = () => {
+      if (paused) {
+        lottieRef.current.play();
+      } else {
+        lottieRef.current.pause();
+      }
+      setPaused(!paused);
+    };
     return (
-    <section className="relative min-h-[470px] w-full bg-image1">
+    <section className="relative h-[742px] w-full bg-gray-800">
+      <Sidebar />
             <div className="mx-auto max-w-7xl px-5 py-[72px] sm:px-6 lg:px-8 flex h-full">
-                <div className=" w-[760px] justify-end mt-20 mb-5 gap-4 flex flex-col">
-                    <h1 className="text-[32px] lg:text-[42px] font-[700] font-[Palanquin]"><TypeAnimation
-                    sequence={['A software developer', 3000, 'a brand', 3000, 'an aspiring engineer', 3000]}
-                    className='text-[36px] text-[#5534eb] border-s-4 border-e-4 rounded-full px-4 bg-[#edefff]'
+                <div className=" w-[760px] justify-center mt-10 mb-5 gap-5 flex flex-col sm:basis-1/2">
+                <div style={{background: 'linear-gradient(to right, red, purple)'
+                }} className='w-fit p-[3px] rounded-full'>
+                    <div className=' py-1 px-3 flex gap-3 items-center text-white uppercase bg-gray-800 w-fit rounded-full'><Lottie animationData={AnimationWavingHand} className='w-[20px]' /><span className='mr-2'>Currently open to work</span></div>
+                </div>
+                    <h1 className="text-[32px] lg:text-[42px] font-[700] font-[montserrat]"><TypeAnimation
+                    sequence={['I\'m a software developer', 3000, 'I\'m a brand', 3000, 'I\'m an engineer', 3000]}
+                    className='text-[36px] text-[white]'
                     repeat={Infinity}
                     /></h1>
-                    <div className="font-[montserrat]">
-                    Hello! I'm David Alagwu, a passionate and dedicated web developer with a flair for crafting elegant, efficient, and innovative digital solutions. My portfolio showcases a curated selection of my best work, highlighting my skills in front-end and back-end development, user experience design, and problem-solving.
+                    <div className="font-[montserrat] text-[#f3f3f3] pr-3">
+                    Hello! I'm David Alagwu, a passionate and dedicated web developer. My portfolio showcases a curated selection of my best work, highlighting my skills in front-end and back-end development, user experience design, and problem-solving.
                     </div>
                     <div className="flex space-x-4">
                     {socials.map((item) => (
-                        <a key={item.label} href={item.href} aria-label={item.label}>
-                        <FontAwesomeIcon icon={item.icon} size="2x" className={`hover:text-[${item.color}]`} />
+                        <a key={item.label} href={item.href} aria-label={item.label} className={`text-${item.color} !important`} >
+                        <FontAwesomeIcon icon={item.icon} size="2x"/>
                         </a>
                     ))}
                     </div>
+                </div>
+                <div className='hidden sm:flex bg-image1 relative pb-8'>
+                    <Lottie loop={true} autoplay={true} lottieRef={lottieRef} animationData={Astronaut} />
+                    <button href='#' onClick={handlePause} className='absolute bottom-8 right-10 rounded-full px-3 pb-2 pt-[6px] text-white font-bold' style={{background: 'linear-gradient(to right, red, purple)'
+                }}>{paused ? 'Resume' : 'Pause'} animation</button>
                 </div>
             </div>
         </section>

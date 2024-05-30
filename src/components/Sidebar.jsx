@@ -1,14 +1,10 @@
-import { sideSites } from "./constants"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 const Sidebar = () => {
     return ( 
-        <div className="min-h-screen bg-[white] w-[62px] p-3 flex flex-col gap-5 items-center">
-            {sideSites.map((site) => (
-                <a href={site.href} key={site.label} className='group'>
-                <img src={site.imgUrl} alt={site.label} className="w-[38px] group-hover:active-web transition duration-500 ease-in" />
-                <p className="hidden group-hover:block absolute left-[50px] z-10 rounded-[6px] bg-black py-1 px-2 text-white">
-        {site.label}</p>
-               </a>
-            ))}
+        <div className="min-h-screen bg-transparent w-[62px] p-3 flex flex-col gap-5 items-center fixed top-1/2 right-3 z-10 text-white">
+            <a><FontAwesomeIcon icon={faChevronUp} size="2x" className="hover:text-gray-500 text-white" /></a>
+            <a><FontAwesomeIcon icon={faChevronDown} size="2x" className="hover:text-gray-500 text-white" /></a>
         </div>
      );
 }

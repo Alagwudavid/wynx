@@ -1,8 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faInstagram, faLinkedin, faGithub, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import logoText from '../assets/logoText.svg'
+import { socials } from './constants';
 function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -15,28 +15,15 @@ function Footer() {
             <p className="text-sm italic">Your neighbourhood service provider.</p>
           </div>
           <div className="flex space-x-4 max-sm:mx-auto">
-            <a href="https://facebook.com" aria-label="Facebook">
-              <FontAwesomeIcon icon={faFacebook} size="2x" />
-            </a>
-            <a href="https://twitter.com" aria-label="Twitter">
-              <FontAwesomeIcon icon={faTwitter} size="2x" />
-            </a>
-            <a href="https://instagram.com" aria-label="Instagram">
-              <FontAwesomeIcon icon={faInstagram} size="2x" />
-            </a>
-            <a href="https://linkedin.com" aria-label="LinkedIn">
-              <FontAwesomeIcon icon={faLinkedin} size="2x" />
-            </a>
-            <a href="https://github.com" aria-label="GitHub">
-              <FontAwesomeIcon icon={faGithub} size="2x" />
-            </a>
-            <a href="https://youtube.com" aria-label="Youtube">
-                    <FontAwesomeIcon icon={faYoutubeSquare} size="2x" />
-            </a>
+              {socials.map((item) => (
+                        <a key={item.label} href={item.href} aria-label={item.label} className={`text-${item.color}`} >
+                        <FontAwesomeIcon icon={item.icon} size="2x"/>
+                        </a>
+                    ))}
           </div>
         </div>
         <div className="text-center text-sm flex max-sm:flex-col gap-[10px] justify-center">
-          <span>&copy;Copyright {currentYear}.</span> <span>made with <FontAwesomeIcon icon={faHeart} className='text-[red]' size="1x" /> by Alagwu David.</span> <span>All rights reserved.</span>
+          <span>&copy;Copyright Wynx Inc. {currentYear}.</span> <span>made with <FontAwesomeIcon icon={faHeart} className='text-[red]' size="1x" /> by Alagwu David.</span> <span>All rights reserved.</span>
         </div>
       </div>
     </footer>

@@ -19,8 +19,8 @@
     padding: 3px;
 }
   .bg-image1{
-    background-image: url('./assets/hero-bg.webp');
-    background-size: cover;
+    background-image: url('./assets/bgGridGradient.png');
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
   }

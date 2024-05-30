@@ -1,12 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faInstagram, faLinkedin, faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faXTwitter, faInstagram, faLinkedin, faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons';
 export const socials = [
-    {label: "Facebook", icon:faFacebook, href: "https://facebook.com", color: "blue"},
-    {label: "Twitter", icon:faTwitter, href: "https://twitter.com", color: "blue"},
-    {label: "Instagram", icon:faInstagram, href: "https://instagram.com", color: "#E80881"},
-    {label: "Linkedin", icon:faLinkedin, href: "https://linkedin.com", color: "blue"},
-    {label: "Github", icon:faGithub, href: "https://github.com", color: "white"},
-    {label: "Youtube", icon:faYoutube, href: "https://youtube.com", color: "red"}
+    {label: "Facebook", icon:faFacebook, href: "https://facebook.com/davidalagwu", color: "blue-800"},
+    {label: "Twitter", icon:faXTwitter, href: "https://twitter.com/AlagwuDavid", color: "blue-800"},
+    {label: "Instagram", icon:faInstagram, href: "https://instagram.com/multicademy.ng", color: "pink-600"},
+    {label: "Linkedin", icon:faLinkedin, href: "https://linkedin.com/davidalagwu", color: "blue-800"},
+    {label: "Github", icon:faGithub, href: "https://github.com/AlagwuDavid", color: "white"},
+    {label: "Youtube", icon:faYoutube, href: "https://youtube.com/@multicademy.ng", color: "[red]"}
 ];
 
 export const navigation = [
