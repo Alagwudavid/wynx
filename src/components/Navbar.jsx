@@ -1,6 +1,7 @@
-import { Fragment } from 'react'
+import { Fragment, useState } from 'react'
 import LogoXl from '../assets/logoText1.svg'
 import LogoSm from '../assets/logoText.svg'
+import { navigation } from "./constants"
 import {
   Disclosure,
   DisclosureButton,
@@ -11,22 +12,25 @@ import {
   MenuItems,
   Transition,
 } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-
-const navigation = [
-  { name: 'Profile', href: '#', current: true },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
-  { name: 'Contact-us', href: '#', current: false },
-]
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function Navbar() {
+  const [ fix, setFix ] = useState(false)
+  function setFixed() {
+    if (window.scrollY >= 10){
+      setFix(true)
+    }
+    else{
+      setFix(false)
+    }
+  }
+  window.addEventListener("scroll", setFixed)
   return (
-    <Disclosure as="nav" className="bg-white">
+    <Disclosure as="nav" className={`${fix ? 'bg-white' : 'bg-transparent'} fixed w-full z-50`}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -107,7 +111,7 @@ export default function Navbar() {
                             href="#"
                             className={classNames(focus ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
-                            Your Profile
+                            David Alagwu
                           </a>
                         )}
                       </MenuItem>
@@ -117,7 +121,7 @@ export default function Navbar() {
                             href="#"
                             className={classNames(focus ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
-                            Settings
+                            Login
                           </a>
                         )}
                       </MenuItem>
