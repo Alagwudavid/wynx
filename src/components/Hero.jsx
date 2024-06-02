@@ -34,7 +34,7 @@ const Hero = () => {
                     repeat={Infinity}
                     /></h1>
                     <div className="font-[montserrat] text-[#f3f3f3] pr-3">
-                    Hello! I'm David Alagwu, a passionate and dedicated web developer. My portfolio showcases a curated selection of my best work, highlighting my skills in front-end and back-end development, user experience design, and problem-solving.
+                    Hello! I'm David Alagwu, a passionate and dedicated computer enthusiast. My portfolio showcases a curated selection of my best work, highlighting my skills in tech related fields, design inspirations, and problem-solving.
                     </div>
                     <div className="flex space-x-4">
                     {socials.map((item) => (
