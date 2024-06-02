@@ -14,4 +14,8 @@ export default {
     require('@headlessui/tailwindcss')({ prefix: 'ui' }),
     require('@tailwindcss/aspect-ratio'),
   ],
+  safelist: [
+    'text-blue-800',
+    'text-pink-600',
+  ],
 }

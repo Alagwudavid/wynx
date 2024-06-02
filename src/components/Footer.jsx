@@ -7,7 +7,7 @@ function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-800 text-white py-6">
+    <footer className="bg-[#121212] text-white py-6 font-[montserrat]">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between items-center mb-4 gap-3">
           <div className="flex gap-[10px] max-sm:flex-col max-sm:mx-auto">
@@ -22,8 +22,8 @@ function Footer() {
                     ))}
           </div>
         </div>
-        <div className="text-center text-sm flex max-sm:flex-col gap-[10px] justify-center">
-          <span>&copy;Copyright Wynx Inc. {currentYear}.</span> <span>made with <FontAwesomeIcon icon={faHeart} className='text-[red]' size="1x" /> by Alagwu David.</span> <span>All rights reserved.</span>
+        <div className="text-center text-sm flex max-sm:flex-col gap-[10px] justify-between">
+          <span>Copyright &copy; {currentYear} Wynx Services, Inc.</span> <span>Made with <FontAwesomeIcon icon={faHeart} className='text-[red]' size="1x" /> by Alagwu David.</span> <span>All rights reserved.</span>
         </div>
       </div>
     </footer>
