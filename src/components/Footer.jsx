@@ -10,9 +10,8 @@ function Footer() {
     <footer className="bg-[#121212] text-white py-6 font-[montserrat]">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between items-center mb-4 gap-3">
-          <div className="flex gap-[10px] max-sm:flex-col max-sm:mx-auto">
+          <div className="flex max-sm:flex-col max-sm:mx-auto">
             <img src={logoText} alt="Logo" className="h-6" />
-            <p className="text-sm italic">Your neighbourhood service provider.</p>
           </div>
           <div className="flex space-x-4 max-sm:mx-auto">
               {socials.map((item) => (

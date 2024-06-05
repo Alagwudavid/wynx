@@ -1,6 +1,6 @@
 import { Fragment, useState } from 'react'
-import LogoXl from '../assets/logoTextb.svg'
-import LogoXlWhite from '../assets/logoTextw.svg'
+import ProfilePicture from '../assets/profile/profile.png'
+import logoText from '../assets/logoText.svg'
 import { navigation } from "./constants"
 import {
   Disclosure,
@@ -49,11 +49,9 @@ export default function Navbar() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="h-8 w-auto"
-                    src={fix ? LogoXl : LogoXlWhite}
-                    alt="Wynx Services Inc."
-                  />
+                  <div
+                    className="w-auto relative"
+                    ><img src={logoText} alt="Logo" className="h-6" /></div>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
@@ -77,7 +75,7 @@ export default function Navbar() {
               <a
                 href="./"
                 className={`${fix ? 'text-black' : 'text-white'} hover:bg-black hover:text-white transition duration-700 ease-in-out rounded-md px-2 py-1 text-md font-medium sm:block hidden`}
-                >Hire us!</a>
+                >Hire!</a>
 
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-3">
@@ -86,8 +84,8 @@ export default function Navbar() {
                       <span className="absolute -inset-1.5" />
                       <span className="sr-only">Open user menu</span>
                       <span
-                        className="h-9 w-9 rounded-full bg-black items-center flex justify-center"
-                      ><h1 className='text-white'>DA</h1></span>
+                        className="h-9 w-9 rounded-full bg-black items-center flex justify-center border-2 border-black"
+                      ><img src={ProfilePicture} className='rounded-full'/></span>
                     </MenuButton>
                   </div>
                   <Transition

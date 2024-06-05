@@ -12,7 +12,7 @@ export const socials = [
 export const navigation = [
     { name: 'Home', href: '#', current: true },
     { name: 'Pricing', href: '#', current: false },
-    { name: 'Projects', href: '#', current: false },
-    { name: 'Curriculum vitae', href: './sections/cvLayoutPage', current: false },
-    { name: 'Contact-us', href: '#', current: false },
+    { name: 'Works', href: '#', current: false },
+    { name: 'CV', href: './sections/cvLayoutPage', current: false },
+    { name: 'Contact', href: '#', current: false },
   ]

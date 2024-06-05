@@ -1,16 +1,18 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHtml5, faCss3, faReact, faSass, faPhp, faLaravel, faSquareJs, faMicrosoft } from '@fortawesome/free-brands-svg-icons';
+import { faGears } from '@fortawesome/free-solid-svg-icons'
 const Languages = () => {
     return (
         <section className="relative w-full bg-[#121212]">
             <div className="mx-auto max-w-7xl px-5 py-[32px] sm:px-6 lg:px-8 flex flex-col h-full">
-                <div className='block'>
-                    <div className='font-[palanquin] italic mb-3 text-[#666]'>
-                    Languages, Frameworks and Tools i work with
+            <div className='flex items-center flex-col'>
+                    <div className='text-[16px] font-[montserrat] text-white uppercase border-[1px] border-gray-600 rounded-full px-2'><FontAwesomeIcon icon={faGears} className='text-[#d3ae42]' size='sm'/> Tools</div>
+                    <div className='font-[palanquin] italic mb-5 text-[#666]'>
+                       Languages, Frameworks and Tools i work with
                     </div>
                 </div>
-                <div className='flex flex-row flex-wrap gap-10 mt-2 items-center'>
+                <div className='flex flex-row flex-wrap gap-10 mt-2 items-center justify-center'>
                         <div className='rounded-md flex-shrink-0 flex justify-between flex-row py-2 px-3 gap-3'>
                             <span className='flex items-center'><FontAwesomeIcon icon={faHtml5} className='text-[brown]' size='2x'/></span>
                             <div className='flex items-center'>
@@ -36,9 +38,9 @@ const Languages = () => {
                             </div>
                         </div>
                         <div className='rounded-md flex-shrink-0 flex justify-between flex-row py-2 px-3 gap-3'>
-                            <span className='flex items-center'><FontAwesomeIcon icon={faSass} className='text-[#d4af42]' size='2x'/></span>
+                            <span className='flex items-center'><FontAwesomeIcon icon={faSass} className='text-[#d44255]' size='2x'/></span>
                             <div className='flex items-center'>
-                                <span className='text-[#d4af42] font-bold text-[22px] font-[montserrat]'>Sass</span>
+                                <span className='text-[#d44255] font-bold text-[22px] font-[montserrat]'>Sass</span>
                             </div>
                         </div>
                         <div className='rounded-md flex-shrink-0 flex justify-between flex-row py-2 px-3 gap-3'>
@@ -59,28 +61,14 @@ const Languages = () => {
                                 <span className='text-[#fff] font-bold text-[22px] font-[montserrat]'>Office Packages</span>
                             </div>
                         </div>
-                        <div className='rounded-md border-[#272c36] border-[2px] flex-shrink-0 flex justify-between flex-row py-2 px-3 service-card-bg gap-3'>
-                            <span className='flex items-center'><FontAwesomeIcon icon={faCss3} className='text-[#d4af42]' size='2x'/></span>
+                        <div className='rounded-md flex-shrink-0 flex justify-between py-2 px-3'>
                             <div className='flex items-center'>
-                                <span className='text-[#d4af42] font-bold text-[22px] font-[montserrat]'>CSS3</span>
+                                <span className='text-[red] font-bold text-[22px] font-[montserrat]'>ADOBE Packages</span>
                             </div>
                         </div>
-                        <div className='rounded-md border-[#272c36] border-[2px] flex-shrink-0 flex justify-between flex-row py-2 px-3 service-card-bg gap-3'>
-                            <span className='flex items-center'><FontAwesomeIcon icon={faCss3} className='text-[#d4af42]' size='2x'/></span>
+                        <div className='rounded-md flex-shrink-0 flex justify-between py-2 px-3'>
                             <div className='flex items-center'>
-                                <span className='text-[#d4af42] font-bold text-[22px] font-[montserrat]'>CSS3</span>
-                            </div>
-                        </div>
-                        <div className='rounded-md border-[#272c36] border-[2px] flex-shrink-0 flex justify-between flex-row py-2 px-3 service-card-bg gap-3'>
-                            <span className='flex items-center'><FontAwesomeIcon icon={faCss3} className='text-[#d4af42]' size='2x'/></span>
-                            <div className='flex items-center'>
-                                <span className='text-[#d4af42] font-bold text-[22px] font-[montserrat]'>CSS3</span>
-                            </div>
-                        </div>
-                        <div className='rounded-md border-[#272c36] border-[2px] flex-shrink-0 flex justify-between flex-row py-2 px-3 service-card-bg gap-3'>
-                            <span className='flex items-center'><FontAwesomeIcon icon={faCss3} className='text-[#d4af42]' size='2x'/></span>
-                            <div className='flex items-center'>
-                                <span className='text-[#d4af42] font-bold text-[22px] font-[montserrat]'>CSS3</span>
+                                <span className='font-bold text-orange-500 text-[22px] font-[montserrat]'>Blender</span>
                             </div>
                         </div>
                 </div>

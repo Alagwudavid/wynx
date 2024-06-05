@@ -26,7 +26,7 @@ const Hero = () => {
                 <div className=" w-[760px] justify-center mt-10 mb-3 gap-5 flex flex-col sm:basis-[60%]">
                 <div style={{background: 'linear-gradient(to right, red, purple)'
                 }} className='w-fit p-[3px] rounded-full'>
-                    <div className=' py-1 px-3 flex gap-3 items-center text-white uppercase bg-[#121212] w-fit rounded-full'><Lottie animationData={AnimationWavingHand} className='w-[20px]' /><span className='mr-2'>Currently open to work</span></div>
+                    <div className=' py-1 px-3 flex items-center text-white uppercase bg-[#121212] w-fit rounded-full'><Lottie animationData={AnimationWavingHand} className='w-[20px]' /> Currently open to work</div>
                 </div>
                     <h1 className="text-[32px] lg:text-[42px] font-[700] font-[montserrat]"><TypeAnimation
                     sequence={['I\'m a Software developer', 3000,'I\'m a Gamer', 3000, 'I\'m a Freelancer', 3000, 'I\'m a Brand', 3000, 'I\'m an Engineer', 3000]}

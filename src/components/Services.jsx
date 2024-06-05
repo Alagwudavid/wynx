@@ -1,18 +1,18 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFont, faCode, faDatabase, faHouseLaptop, faPlus, faCircleChevronRight, faBezierCurve, faPenNib } from '@fortawesome/free-solid-svg-icons';
+import { faFont, faCode, faDatabase, faHouseLaptop, faPlus, faCircleChevronRight, faBezierCurve, faPenNib, faGears } from '@fortawesome/free-solid-svg-icons';
 const Services = () => {
     return (
         <section className="relative h-[578px] w-full bg-[#121212]">
             <div className="mx-auto max-w-7xl px-5 py-[72px] sm:px-6 lg:px-8 flex flex-col h-full">
-                <div className='block'>
-                    <div className='text-[32px] font-[montserrat] font-bold text-[#e8077f] uppercase'>Our Services</div>
+                <div className='flex items-center flex-col'>
+                    <div className='text-[16px] font-[montserrat] text-white uppercase border-[1px] border-gray-600 rounded-full px-2'><FontAwesomeIcon icon={faGears} className='text-[#727cf5]' size='sm'/> Services</div>
                     <div className='font-[palanquin] italic mb-5 text-[#666]'>
                         We don't just build websites,
                         we craft experiences
                     </div>
                 </div>
                 <div className='relative flex flex-row gap-[15px]'>   
-                <div className='overflow-x-scroll no-scrollbar flex flex-row flex-nowrap gap-10 my-3 items-center basis-[calc(100%-20px)]'>
+                <div className='overflow-x-scroll py-3 no-scrollbar flex flex-row flex-nowrap gap-10 my-3 items-center basis-[calc(100%-20px)]'>
                         <div className='rounded-[20px] border-[#272c36] border-[2px] w-[280px] h-[320px] flex-shrink-0 flex justify-between flex-col py-2 service-card-bg'>
                             <div className='px-4 py-4 mt-2 w-full'><span className='rounded-full py-3 px-4 justify-center items-center' style={{backgroundColor: 'rgba(212, 175, 66, 0.15)'}}><FontAwesomeIcon icon={faFont} className='text-[#d4af42]'/></span></div>
                             <div className='flex flex-col px-4 py-3'>
@@ -30,7 +30,7 @@ const Services = () => {
                             <div className='flex flex-col px-4 py-3'>
                                 <span className='text-[#ea3336] font-bold text-[24px] font-[montserrat]'>Graphics Design</span>
                                 <span className='text-gray-400 font-[palanquin]'>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nobis blanditiis soluta quos perspiciatis
+                                We craft pixel-perfect designs with Coreldraw, Photoshop, Adobe Illustrator and Canva, creating designs that captivate customers.
                                 </span>
                             </div>
                             <div className='flex px-4 py-4'>
@@ -42,7 +42,7 @@ const Services = () => {
                             <div className='flex flex-col px-4 py-3'>
                                 <span className='text-[#e8077f] font-bold text-[24px] font-[montserrat]'>Web App Dev_</span>
                                 <span className='text-gray-400 font-[palanquin]'>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nobis blanditiis soluta quos perspiciatis
+                                We help convert your UI design into real website using the latest technology - Tailwind, React & Typescript, so that you can focus on growing your business
                                 </span>
                             </div>
                             <div className='flex px-4 py-4'>
@@ -78,7 +78,7 @@ const Services = () => {
                             <div className='flex flex-col px-4 py-3'>
                                 <span className='text-[#5af143] font-bold text-[24px] font-[montserrat]'>UI/UX Design</span>
                                 <span className='text-gray-400 font-[palanquin]'>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nobis blanditiis soluta quos perspiciatis
+                                We craft pixel-perfect designs with Figma and Adobe Xd, No clunky layouts, just smooth flows that guide your visitors.
                                 </span>
                             </div>
                             <div className='flex px-4 py-4'>
@@ -88,9 +88,10 @@ const Services = () => {
                         <div className='rounded-[20px] border-[#272c36] border-[2px] w-[280px] h-[320px] flex-shrink-0 flex justify-between flex-col py-2 service-card-bg'>
                         <div className='px-4 py-4 mt-2 w-full'><span className='rounded-full py-3 px-4 justify-center items-center' style={{backgroundColor: 'rgba(225, 225, 225, 0.15)'}}><FontAwesomeIcon icon={faPlus} className='text-[#ffffff]'/></span></div>
                         <div className='flex flex-col px-4 py-3'>
-                                <span className='text-gray-300 font-bold text-[24px] font-[montserrat]'>Coming Soon</span>
+                                <span className='text-gray-300 font-bold text-[24px] font-[montserrat]'>Others</span>
                                 <span className='text-gray-400 font-[palanquin]'>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nobis blanditiis soluta quos perspiciatis
+                                    We don't just build website, we craft experiences.
+                                    click below to view all services.
                                 </span>
                         </div>
                         <div className='flex px-4 py-4'>
