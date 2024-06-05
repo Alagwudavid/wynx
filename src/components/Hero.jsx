@@ -20,7 +20,7 @@ const Hero = () => {
       setPaused(!paused);
     };
     return (
-    <section className="relative lg:h-[612px] w-full bg-[#121212]">
+    <section className="relative h-[642px] w-full bg-[#121212]">
       <Sidebar />
             <div className="mx-auto max-w-7xl px-5 pt-[72px] pb-3 sm:px-6 lg:px-8 flex h-full">
                 <div className=" w-[760px] justify-center mt-10 mb-3 gap-5 flex flex-col sm:basis-[60%]">

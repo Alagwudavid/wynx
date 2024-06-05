@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faWhatsappSquare } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom'
 import { Fragment, useState } from 'react'
 import ProfilePicture from '../assets/profile/profile.png'
 import logoText from '../assets/logoText.svg'
@@ -13,6 +16,7 @@ import {
   Transition,
 } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -30,7 +34,7 @@ export default function Navbar() {
   }
   window.addEventListener("scroll", setFixed)
   return (
-    <Disclosure as="nav" className={`${fix ? 'bg-white' : 'bg-transparent'} fixed w-full z-50 transition duration-500 ease-in-out`}>
+    <Disclosure as="nav" className={`${fix ? 'bg-white' : 'bg-transparent'} fixed w-full z-50 transition duration-500 mt-[45px] ease-in-out`}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -56,9 +60,9 @@ export default function Navbar() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
-                        href={item.href}
+                        to={item.href}
                         className={classNames(
                           item.current ? 'bg-black text-white' : 'text-black hover:bg-black hover:text-white transition duration-700 ease-in-out',
                           'rounded-md px-3 py-2 text-sm font-medium', fix ? 'text-black' : 'text-white'
@@ -66,19 +70,24 @@ export default function Navbar() {
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-              <a
-                href="./"
-                className={`${fix ? 'text-black' : 'text-white'} hover:bg-black hover:text-white transition duration-700 ease-in-out rounded-md px-2 py-1 text-md font-medium sm:block hidden`}
-                >Hire!</a>
-
+              <div className='flex gap-3'>
+              <Link
+                to="./"
+                className={`${fix ? 'text-black' : 'text-white'} px-2 py-1 text-md font-medium sm:block hidden`}
+                ><FontAwesomeIcon icon={faHeart} className='text-gray-500' size='lg'/> '20'</Link>
+              <Link
+                to="./"
+                className={`${fix ? 'text-black' : 'text-white'} px-2 py-1 text-md font-medium sm:block hidden`}
+                ><FontAwesomeIcon icon={faWhatsappSquare} className='text-green-700' size='lg'/> Chat</Link>
+              </div>
                 {/* Profile dropdown */}
-                <Menu as="div" className="relative ml-3">
+                <Menu as="div" className="hidden relative ml-3">
                   <div>
                     <MenuButton className="relative flex rounded-full bg-black text-sm">
                       <span className="absolute -inset-1.5" />
@@ -99,32 +108,32 @@ export default function Navbar() {
                     <MenuItems className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                       <MenuItem>
                         {({ focus }) => (
-                          <a
-                            href="#"
+                          <Link
+                            to="#"
                             className={classNames(focus ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
-                            David Alagwu
-                          </a>
+                           Profile (David Alagwu)
+                          </Link>
                         )}
                       </MenuItem>
                       <MenuItem>
                         {({ focus }) => (
-                          <a
-                            href="#"
+                          <Link
+                            to="#"
                             className={classNames(focus ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
                             Login
-                          </a>
+                          </Link>
                         )}
                       </MenuItem>
                       <MenuItem>
                         {({ focus }) => (
-                          <a
-                            href="#"
+                          <Link
+                            to="#"
                             className={classNames(focus ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
                             Sign out
-                          </a>
+                          </Link>
                         )}
                       </MenuItem>
                     </MenuItems>
@@ -135,14 +144,14 @@ export default function Navbar() {
           </div>
 
           <DisclosurePanel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
+            <div className="flex gap-[1px] space-y-1 px-[2px] pb-3 pt-2">
               {navigation.map((item) => (
                 <DisclosureButton
                   key={item.name}
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : `${fix ? 'text-black' : 'text-white'} hover:bg-gray-700 hover:text-white`,
+                    item.current ? 'bg-black text-white' : `${fix ? 'text-black' : 'text-white'} hover:bg-black hover:text-white`,
                     'block rounded-md px-3 py-2 text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}

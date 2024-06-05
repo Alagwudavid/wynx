@@ -10,9 +10,9 @@ export const socials = [
 ];
 
 export const navigation = [
-    { name: 'Home', href: '#', current: true },
-    { name: 'Pricing', href: '#', current: false },
-    { name: 'Works', href: '#', current: false },
-    { name: 'CV', href: './sections/cvLayoutPage', current: false },
+    { name: 'Home', href: '/', current: true },
+    { name: 'About me', href: '/profile', current: false },
+    { name: 'Projects', href: '#', current: false },
+    { name: 'Services', href: '#', current: false },
     { name: 'Contact', href: '#', current: false },
   ]

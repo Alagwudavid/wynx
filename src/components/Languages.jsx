@@ -4,15 +4,15 @@ import { faHtml5, faCss3, faReact, faSass, faPhp, faLaravel, faSquareJs, faMicro
 import { faGears } from '@fortawesome/free-solid-svg-icons'
 const Languages = () => {
     return (
-        <section className="relative w-full bg-[#121212]">
-            <div className="mx-auto max-w-7xl px-5 py-[32px] sm:px-6 lg:px-8 flex flex-col h-full">
+        <section className="relative h-fit w-full bg-[#121212]">
+            <div className="mx-auto max-w-7xl px-5 py-[72px] flex flex-col h-full">
             <div className='flex items-center flex-col'>
                     <div className='text-[16px] font-[montserrat] text-white uppercase border-[1px] border-gray-600 rounded-full px-2'><FontAwesomeIcon icon={faGears} className='text-[#d3ae42]' size='sm'/> Tools</div>
                     <div className='font-[palanquin] italic mb-5 text-[#666]'>
                        Languages, Frameworks and Tools i work with
                     </div>
                 </div>
-                <div className='flex flex-row flex-wrap gap-10 mt-2 items-center justify-center'>
+                <div className='flex flex-row flex-wrap sm:gap-2 gap-10 mt-2 items-center justify-center'>
                         <div className='rounded-md flex-shrink-0 flex justify-between flex-row py-2 px-3 gap-3'>
                             <span className='flex items-center'><FontAwesomeIcon icon={faHtml5} className='text-[brown]' size='2x'/></span>
                             <div className='flex items-center'>
