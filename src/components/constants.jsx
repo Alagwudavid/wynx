@@ -11,8 +11,8 @@ export const socials = [
 
 export const navigation = [
     { name: 'Home', href: '/', current: true },
-    { name: 'About me', href: '/profile', current: false },
+    { name: 'About', href: '/profile', current: false },
     { name: 'Projects', href: '#', current: false },
     { name: 'Services', href: '#', current: false },
-    { name: 'Contact', href: '#', current: false },
+    { name: 'Contact', href: '/contact-us', current: false },
   ]

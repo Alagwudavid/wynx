@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFont, faCode, faDatabase, faHouseLaptop, faPlus, faCircleChevronRight, faBezierCurve, faPenNib, faGears } from '@fortawesome/free-solid-svg-icons';
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 const Services = () => {
     return (
         <section className="relative h-[578px] w-full bg-[#121212]">
@@ -38,7 +39,8 @@ const Services = () => {
                             </div>
                         </div>
                         <div className='rounded-[20px] border-[#272c36] border-[2px] w-[280px] h-[320px] flex-shrink-0 flex justify-between flex-col py-2 service-card-bg'>
-                            <div className='px-4 py-4 mt-2 w-full'><span className='rounded-full py-3 px-[13px] justify-center items-center' style={{backgroundColor: 'rgba(232, 7, 127, 0.15)'}}><FontAwesomeIcon icon={faCode} className='text-[#e8077f]'/></span></div>
+                            <div className='px-4 py-4 mt-2 w-full'><span className='rounded-full py-3 px-[13px] justify-center items-center' style={{backgroundColor: 'rgba(232, 7, 127, 0.15)'}}>
+                                <FontAwesomeIcon icon={faCode} className='text-[#e8077f]'/></span></div>
                             <div className='flex flex-col px-4 py-3'>
                                 <span className='text-[#e8077f] font-bold text-[24px] font-[montserrat]'>Web App Dev_</span>
                                 <span className='text-gray-400 font-[palanquin]'>

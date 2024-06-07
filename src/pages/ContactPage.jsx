@@ -5,7 +5,7 @@ import Footer from "../components/Footer"
 export const ContactPage = () => {
     return ( 
     <section>
-  <section>
+    <section className=" mb-[45px]">
     <AlertBox />
   </section>
   <section>

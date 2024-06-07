@@ -1,12 +1,13 @@
 import React, { useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import Sidebar from "./Sidebar"
 import Animation404 from "../assets/Animation404.json";
 import Lottie from "lottie-react";
 import { Link } from 'react-router-dom';
 const ErrorLayout = () => {
     const lottieRef = useRef();
+    const currentUrl = window.location.href;
     return (
     <section className="relative h-[642px] w-full bg-[#121212]">
       <Sidebar />
@@ -16,11 +17,10 @@ const ErrorLayout = () => {
                     <div className="font-[montserrat] text-[#f3f3f3] pr-3">
                     Looks like you typed the wrong url,
                     <br />
-                    <p>"https://localhost:5143/errorText"</p>
+                    <p className='text-gray-400'>"{currentUrl}"</p>
                     </div>
-                    <div className='flex gap-3'>
-                        <Link className='rounded-md bg-white py-1 px-3 text-black basis-1/3 font-bold items-center justify-center' to='./' ><FontAwesomeIcon icon={faAngleLeft}/> Home</Link>
-                        <button className='rounded-md bg-white py-1 px-3 text-black basis-1/3 font-bold items-center justify-center'>Sug: Home <FontAwesomeIcon icon={faAngleRight}/></button>
+                    <div>
+                        <Link className='rounded-md bg-white py-1 px-3 text-black basis-1/3 font-bold items-center justify-center' to='./'>HOME <FontAwesomeIcon icon={faAngleRight}/></Link>
                     </div>
                 </div>
                 <div className='hidden sm:flex relative pb-6'>

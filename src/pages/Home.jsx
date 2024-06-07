@@ -8,7 +8,7 @@ import AlertBox from "../components/AlertBox"
 export default function Home() {
   return (
     <section>
-  <section>
+  <section className=" mb-[45px]">
     <AlertBox />
   </section>
   <section>

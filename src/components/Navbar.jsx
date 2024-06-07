@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faWhatsappSquare } from '@fortawesome/free-brands-svg-icons';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom'
 import { Fragment, useState } from 'react'
-import ProfilePicture from '../assets/profile/profile.png'
+import ProfilePicture from '../assets/profile/profile.jpg'
 import logoText from '../assets/logoText.svg'
 import { navigation } from "./constants"
 import {
@@ -15,8 +15,8 @@ import {
   MenuItems,
   Transition,
 } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { ChevronDoubleDownIcon, ChevronDoubleUpIcon, ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline'
+import { faHandsClapping } from '@fortawesome/free-solid-svg-icons';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -34,7 +34,7 @@ export default function Navbar() {
   }
   window.addEventListener("scroll", setFixed)
   return (
-    <Disclosure as="nav" className={`${fix ? 'bg-white' : 'bg-transparent'} fixed w-full z-50 transition duration-500 mt-[45px] ease-in-out`}>
+    <Disclosure as="nav" className={`${fix ? 'bg-white' : 'bg-transparent'} fixed w-full z-50 transition duration-500 ease-in-out`}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -45,9 +45,9 @@ export default function Navbar() {
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                    <ChevronDoubleUpIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                    <ChevronDoubleDownIcon className="block h-6 w-6" aria-hidden="true" />
                   )}
                 </DisclosureButton>
               </div>
@@ -79,12 +79,12 @@ export default function Navbar() {
               <div className='flex gap-3'>
               <Link
                 to="./"
-                className={`${fix ? 'text-black' : 'text-white'} px-2 py-1 text-md font-medium sm:block hidden`}
-                ><FontAwesomeIcon icon={faHeart} className='text-gray-500' size='lg'/> '20'</Link>
+                className={`${fix ? 'text-black' : 'text-white'} px-2 py-1 text-md font-medium md:block hidden`}
+                ><FontAwesomeIcon icon={faHandsClapping} className='text-red-500' size='lg'/> '20'</Link>
               <Link
-                to="./"
-                className={`${fix ? 'text-black' : 'text-white'} px-2 py-1 text-md font-medium sm:block hidden`}
-                ><FontAwesomeIcon icon={faWhatsappSquare} className='text-green-700' size='lg'/> Chat</Link>
+                to="https://wa.me/+2349045492542?text=I'm%20interested%20in"
+                className={`${fix ? 'text-black' : 'text-white'} px-2 py-1 text-md font-medium md:block hidden bg-green-400 rounded`}
+                ><FontAwesomeIcon icon={faWhatsapp} size='lg'/> Chat</Link>
               </div>
                 {/* Profile dropdown */}
                 <Menu as="div" className="hidden relative ml-3">

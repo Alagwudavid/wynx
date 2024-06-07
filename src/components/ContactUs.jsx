@@ -9,12 +9,12 @@ const ContactUs = () => {
     const lottieRef = useRef();
 
     return (
-        <section className="relative w-full bg-[#121212]">
-            <div className="mx-auto max-w-7xl px-5 py-[72px] sm:px-6 lg:px-8 flex flex-col h-full">
+        <section className="relative h-[742px] w-full bg-[#121212]">
+            <div className="mx-auto max-w-7xl px-5 pt-24 pb-16 sm:px-6 lg:px-8 flex flex-col h-full">
                 
                 <div className='relative border-2 border-[#272c36] h-full rounded-3xl grid grid-rows-1 lg:grid-cols-2' style={{boxShadow: 'rgba(0, 0, 0, 0.4) 10px 10px 12px'}}>   
-                <div className=" p-5 h-full">
-                    <form className="flex flex-col mx-3 gap-4">
+                <div className=" p-5 pt-10 h-full">
+                    <form className="flex flex-col mx-3 mt-4 gap-4">
                     <div className='flex items-center flex-col'>
                     <div className='text-[16px] font-[montserrat] text-white uppercase border-[1px] border-gray-600 rounded-full px-2'><FontAwesomeIcon icon={faMessage} className='text-white' size='sm'/> Message</div>
                     <div className='font-[palanquin] italic mb-5 text-[#666]'>
