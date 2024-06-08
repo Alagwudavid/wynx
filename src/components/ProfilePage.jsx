@@ -3,7 +3,7 @@ import ProfilePicture from "../assets/profile/profile.jpg"
 import { faArrowLeft, faBookBookmark, faBrain, faBriefcase, faCalendar, faCloudDownload, faLocationPinLock, faMars, faPenNib } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { faFacebook, faGoogle, faLinkedin, faXTwitter } from "@fortawesome/free-brands-svg-icons";
-import CvDoc from "../assets/dist/DAVID ALAGWU.pdf"
+import CvDoc from "../assets/file/DAVID ALAGWU.pdf"
 const ProfilePage = () => {
     return ( 
         <section className="relative w-full bg-[#fff]">
