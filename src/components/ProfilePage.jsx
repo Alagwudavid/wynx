@@ -34,7 +34,7 @@ const ProfilePage = () => {
                     <div className="block lg:flex flex-row items-center gap-2 text-[14px] text-black">
                     <ul className="flex flex-col gap-2">
                         <li className="gap-2 flex items-center"><FontAwesomeIcon icon={faLinkedin} className="text-blue-500" size="lg"/><Link to={'https://www.linkedin.com/davidalagwung'} className="text-gray-500 font-bold hover:underline">in/davidalagwung</Link></li>
-                        <li className="gap-2 flex items-center"><FontAwesomeIcon icon={faXTwitter} size="gl"/><Link to={'https://www.x.com/davidalagwu'} className="text-gray-500 font-bold hover:underline">@davidalagwu</Link></li>
+                        <li className="gap-2 flex items-center"><FontAwesomeIcon icon={faXTwitter} size="lg"/><Link to={'https://www.x.com/davidalagwu'} className="text-gray-500 font-bold hover:underline">@davidalagwu</Link></li>
                         <li className="gap-2 flex items-center"><FontAwesomeIcon icon={faGoogle} className="text-yellow-500" size="lg"/><Link to={'mailto:alagwudavid@gmail.com'} className="text-gray-500 font-bold hover:underline">alagwudavid@gmail.com</Link></li>
                         <li className="gap-2 flex items-center"><FontAwesomeIcon icon={faFacebook} className="text-blue-500" size="lg"/><Link to={'https://www.facebook.com/davidalagwu'} className="text-gray-500 font-bold hover:underline">fb/davidalagwung</Link></li>
                     </ul>
