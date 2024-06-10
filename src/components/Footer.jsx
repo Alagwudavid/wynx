@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
-import logoText from '../assets/logoText.svg'
+import logoText from '../assets/typo-px.png'
 import { socials } from './constants';
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -16,7 +16,7 @@ function Footer() {
           <div className="flex space-x-4 max-sm:mx-auto">
               {socials.map((item) => (
                         <a key={item.label} href={item.href} aria-label={item.label} className={`text-${item.color}`} >
-                        <FontAwesomeIcon icon={item.icon} size="2x"/>
+                        <FontAwesomeIcon icon={item.icon} size="xl"/>
                         </a>
                     ))}
           </div>

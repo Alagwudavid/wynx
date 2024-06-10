@@ -20,10 +20,10 @@ const Hero = () => {
       setPaused(!paused);
     };
     return (
-    <section className="relative h-[642px] w-full bg-[#121212]">
+    <section className="relative h-[80vh] w-full bg-[#121212]">
       <Sidebar />
-            <div className="mx-auto max-w-7xl px-5 pt-[72px] pb-3 sm:px-6 lg:px-8 flex h-full">
-                <div className="w-[760px] justify-center mt-10 mb-3 flex flex-col sm:basis-[60%]">
+            <div className="mx-auto max-w-7xl px-5 pt-[25px] pb-3 sm:px-6 lg:px-8 flex h-full">
+                <div className="w-[760px] max-sm:items-center justify-center mt-10 mb-3 flex flex-col sm:basis-[60%]">
                 {/* <div style={{background: 'linear-gradient(to right, red, purple)'
                 }} className='w-fit p-[3px] rounded-full'>
                     <div className=' py-1 px-3 flex items-center text-white uppercase bg-[#121212] w-fit rounded-full'> Currently open to work</div>
@@ -35,8 +35,8 @@ const Hero = () => {
                     className='text-[36px] text-[#e80881]'
                     repeat={Infinity}
                     /></h1> */}
-                    <h3 className='text-[22px] font-bold font-lato-sans text-yellow-200'>Full Stack Web Developer</h3>
-                    <ul className='block lg:flex flex-row gap-2 items-center text-white text-[18px] mb-6'><li>Graphic designer</li><span className='text-yellow-200 mx-2'>/</span><li>Programmer</li><span className='text-yellow-200 mx-2'>/</span><li>Software Engineer</li></ul>
+                    <h3 className='text-[22px] font-bold font-lato-sans text-yellow-200'>Full-Stack Web Developer</h3>
+                    <ul className='block max-sm:text-center lg:flex flex-row gap-2 items-center text-white text-[18px] mb-6'><li>Graphic designer</li><span className='hidden md:block text-yellow-200 mx-2'>/</span><li>Programmer</li><span className='hidden md:block text-yellow-200 mx-2'>/</span><li>Software Engineer</li></ul>
                     <div className="font-[montserrat] text-[#f3f3f3] pr-3 text-[18px]">
                     {/* Hello! I'm David Alagwu, a passionate and dedicated computer enthusiast. My portfolio showcases a curated selection of my best work, highlighting my skills in tech related fields, design inspirations, and problem-solving. */}
                     </div>

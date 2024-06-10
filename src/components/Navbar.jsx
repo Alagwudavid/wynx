@@ -3,7 +3,7 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom'
 import React, { Fragment, useState, useEffect } from 'react'
 import ProfilePicture from '../assets/profile/profile.jpg'
-import logoText from '../assets/logoText.svg'
+import logoText from '../assets/typo-px.png'
 import { navigation } from "./constants"
 import {
   Disclosure,
@@ -15,7 +15,7 @@ import {
   MenuItems,
   Transition,
 } from '@headlessui/react'
-import { ChevronDoubleDownIcon, ChevronDoubleUpIcon, ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline'
+import { BarsArrowDownIcon, BarsArrowUpIcon, ChevronDoubleDownIcon, ChevronDoubleUpIcon, ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline'
 import { faDownload, faHandsClapping } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios';
 
@@ -24,32 +24,22 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
-  const [ fix, setFix ] = useState(false)
-  function setFixed() {
-    if (window.scrollY >= 10){
-      setFix(true)
-    }
-    else{
-      setFix(false)
-    }
-  }
-  window.addEventListener("scroll", setFixed)
 
   return (
-    <Disclosure as="nav" className={`${fix ? 'bg-white' : 'bg-transparent'} fixed w-full z-50 transition duration-500 ease-in-out`}>
+    <Disclosure as="nav" className={`bg-[#121212]`}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex py-[25px] items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <DisclosureButton className={`relative inline-flex items-center justify-center rounded-md p-2 ${fix ? 'text-black' : 'text-white'} hover:bg-gray-700 hover:text-white`}>
+                <DisclosureButton className={`relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-gray-700 hover:text-white`}>
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <ChevronDoubleUpIcon className="block h-6 w-6" aria-hidden="true" />
+                    <BarsArrowUpIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
-                    <ChevronDoubleDownIcon className="block h-6 w-6" aria-hidden="true" />
+                    <BarsArrowDownIcon className="block h-6 w-6" aria-hidden="true" />
                   )}
                 </DisclosureButton>
               </div>
@@ -66,8 +56,8 @@ export default function Navbar() {
                         key={item.name}
                         to={item.href}
                         className={classNames(
-                          item.current ? 'bg-black text-white' : 'text-black hover:bg-black hover:text-white transition duration-700 ease-in-out',
-                          'rounded-md px-3 py-2 text-sm font-medium', fix ? 'text-black' : 'text-white'
+                          item.current ? ' text-white' : 'text-black transition duration-700 ease-in-out',
+                          'rounded-md px-3 py-2 text-sm font-medium', 'text-white'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -81,11 +71,11 @@ export default function Navbar() {
               <div className='flex gap-3'>
               <Link
                 to="https://wa.me/+2349045492542?text=I'm%20interested%20in"
-                className={`${fix ? 'text-black' : 'text-white'} px-2 py-1 text-md font-medium md:block hidden bg-green-400 rounded`}
+                className={`text-white px-2 py-1 text-md font-medium md:block hidden bg-green-400 rounded`}
                 ><FontAwesomeIcon icon={faWhatsapp} size='lg'/> Chat</Link>
                 <Link
                 to="./"
-              className={`${fix ? 'text-blue-600 border-blue-700' : 'text-white border-white'} px-2 py-1 text-md font-medium md:block hidden rounded-md border-[2px]`}
+              className={`text-yellow-200 border-yellow-200 px-2 py-1 text-md font-medium md:block hidden rounded-md border-[2px]`}
                 ><FontAwesomeIcon icon={faDownload} size='lg'/> Resume</Link>
               </div>
                 {/* Profile dropdown */}
@@ -146,14 +136,14 @@ export default function Navbar() {
           </div>
 
           <DisclosurePanel className="sm:hidden">
-            <div className="flex gap-[1px] space-y-1 px-[2px] pb-3 pt-2">
+            <div className="flex gap-[1px] space-y-1 px-[2px] pb-3 pt-2 justify-between">
               {navigation.map((item) => (
                 <DisclosureButton
                   key={item.name}
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-black text-white' : `${fix ? 'text-black' : 'text-white'} hover:bg-black hover:text-white`,
+                    item.current ? ' text-white' : `text-white`,
                     'block rounded-md px-3 py-2 text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}

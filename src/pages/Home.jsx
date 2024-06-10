@@ -11,9 +11,9 @@ export default function Home() {
   {/* <section className=" mb-[45px]">
     <AlertBox />
   </section> */}
-  <section>
+  <div>
       <Navbar />
-  </section>
+  </div>
   <section>
       <Hero />
   </section>
