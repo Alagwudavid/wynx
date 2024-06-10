@@ -4,9 +4,6 @@ import ProfilePage from "../components/ProfilePage"
 export default function Profile() {
   return (
   <section className="relative">
-  {/* <section>
-      <Navbar />
-  </section> */}
     <section>
       <ProfilePage/>
     </section>

@@ -8,6 +8,8 @@ import Home from './pages/Home'
 import Profile from './pages/profile'
 import { ContactPage } from './pages/ContactPage'
 import { ErrorPage } from './pages/ErrorPage'
+import Login from './components/Login'
+import Dashboard from './components/Dashboard'
 
 const router = createBrowserRouter([
   {
@@ -22,10 +24,18 @@ const router = createBrowserRouter([
   {
     path: '/contact-us',
     element: <ContactPage />
+  },
+  {
+    path: '/login',
+    element: <Login />
+  },
+  {
+    path: '/dashboard',
+    element: <Dashboard />
   }
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('___wynx')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>,

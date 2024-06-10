@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom'
-import { Fragment, useState } from 'react'
+import React, { Fragment, useState, useEffect } from 'react'
 import ProfilePicture from '../assets/profile/profile.jpg'
 import logoText from '../assets/logoText.svg'
 import { navigation } from "./constants"
@@ -16,7 +16,8 @@ import {
   Transition,
 } from '@headlessui/react'
 import { ChevronDoubleDownIcon, ChevronDoubleUpIcon, ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline'
-import { faHandsClapping } from '@fortawesome/free-solid-svg-icons';
+import { faDownload, faHandsClapping } from '@fortawesome/free-solid-svg-icons';
+import axios from 'axios';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -33,12 +34,13 @@ export default function Navbar() {
     }
   }
   window.addEventListener("scroll", setFixed)
+
   return (
     <Disclosure as="nav" className={`${fix ? 'bg-white' : 'bg-transparent'} fixed w-full z-50 transition duration-500 ease-in-out`}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-16 items-center justify-between">
+            <div className="relative flex py-[25px] items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <DisclosureButton className={`relative inline-flex items-center justify-center rounded-md p-2 ${fix ? 'text-black' : 'text-white'} hover:bg-gray-700 hover:text-white`}>
@@ -78,13 +80,13 @@ export default function Navbar() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               <div className='flex gap-3'>
               <Link
-                to="./"
-                className={`${fix ? 'text-black' : 'text-white'} px-2 py-1 text-md font-medium md:block hidden`}
-                ><FontAwesomeIcon icon={faHandsClapping} className='text-red-500' size='lg'/> '20'</Link>
-              <Link
                 to="https://wa.me/+2349045492542?text=I'm%20interested%20in"
                 className={`${fix ? 'text-black' : 'text-white'} px-2 py-1 text-md font-medium md:block hidden bg-green-400 rounded`}
                 ><FontAwesomeIcon icon={faWhatsapp} size='lg'/> Chat</Link>
+                <Link
+                to="./"
+              className={`${fix ? 'text-blue-600 border-blue-700' : 'text-white border-white'} px-2 py-1 text-md font-medium md:block hidden rounded-md border-[2px]`}
+                ><FontAwesomeIcon icon={faDownload} size='lg'/> Resume</Link>
               </div>
                 {/* Profile dropdown */}
                 <Menu as="div" className="hidden relative ml-3">
