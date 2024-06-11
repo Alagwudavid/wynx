@@ -138,18 +138,17 @@ export default function Navbar() {
           <DisclosurePanel className="sm:hidden">
             <div className="flex gap-[1px] space-y-1 px-[2px] pb-3 pt-2 justify-between mx-3">
               {navigation.map((item) => (
-                <DisclosureButton
+                <Link
                   key={item.name}
-                  as="a"
-                  href={item.href}
+                  as="Link"
+                  to={item.href}
                   className={classNames(
                     item.current ? ' text-white' : `text-white`,
                     'block rounded-md px-3 py-2 text-base font-medium'
                   )}
-                  aria-current={item.current ? 'page' : undefined}
                 >
                   {item.name}
-                </DisclosureButton>
+                </Link>
               ))}
             </div>
           </DisclosurePanel>
