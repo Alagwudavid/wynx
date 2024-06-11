@@ -3,7 +3,7 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom'
 import React, { Fragment, useState, useEffect } from 'react'
 import ProfilePicture from '../assets/profile/profile.jpg'
-import logoText from '../assets/typo-px.png'
+import WynxLogo from './wynxLogo';
 import { navigation } from "./constants"
 import {
   Disclosure,
@@ -33,7 +33,7 @@ export default function Navbar() {
             <div className="relative flex py-[25px] items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <DisclosureButton className={`relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-gray-700 hover:text-white`}>
+                <DisclosureButton className={`relative inline-flex items-center justify-center rounded-md p-2 text-[#FBE68D] hover:bg-yellow-900 hover:text-[#FBE68D]`}>
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -47,7 +47,7 @@ export default function Navbar() {
                 <div className="flex flex-shrink-0 items-center">
                   <div
                     className="w-auto relative"
-                    ><img src={logoText} alt="Logo" className="h-6" /></div>
+                    ><WynxLogo/></div>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
@@ -56,7 +56,7 @@ export default function Navbar() {
                         key={item.name}
                         to={item.href}
                         className={classNames(
-                          item.current ? ' text-white' : 'text-black transition duration-700 ease-in-out',
+                          item.current ? ' text-white' : 'text-black transition duration-500 ease-in-out',
                           'rounded-md px-3 py-2 text-sm font-medium', 'text-white'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -136,7 +136,7 @@ export default function Navbar() {
           </div>
 
           <DisclosurePanel className="sm:hidden">
-            <div className="flex gap-[1px] space-y-1 px-[2px] pb-3 pt-2 justify-between">
+            <div className="flex gap-[1px] space-y-1 px-[2px] pb-3 pt-2 justify-between mx-3">
               {navigation.map((item) => (
                 <DisclosureButton
                   key={item.name}

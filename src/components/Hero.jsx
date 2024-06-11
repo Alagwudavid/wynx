@@ -3,22 +3,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { } from '@fortawesome/free-solid-svg-icons';
 import { socials } from './constants';
 import Sidebar from "./Sidebar"
-import { TypeAnimation } from 'react-type-animation';
-import Astronaut from "../assets/AstronautAnimation.json";
+// import { TypeAnimation } from 'react-type-animation';
+// import Astronaut from "../assets/AstronautAnimation.json";
 import AnimationWavingHand from "../assets/AnimationWavingHand.json";
 import Lottie from "lottie-react";
 const Hero = () => {
-    const lottieRef = useRef(null);
-    const [paused, setPaused] = useState(false);
+    // const lottieRef = useRef(null);
+    // const [paused, setPaused] = useState(false);
   
-    const handlePause = () => {
-      if (paused) {
-        lottieRef.current.play();
-      } else {
-        lottieRef.current.pause();
-      }
-      setPaused(!paused);
-    };
+    // const handlePause = () => {
+    //   if (paused) {
+    //     lottieRef.current.play();
+    //   } else {
+    //     lottieRef.current.pause();
+    //   }
+    //   setPaused(!paused);
+    // };
     return (
     <section className="relative h-[80vh] w-full bg-[#121212]">
       <Sidebar />
@@ -36,7 +36,7 @@ const Hero = () => {
                     repeat={Infinity}
                     /></h1> */}
                     <h3 className='text-[22px] font-bold font-lato-sans text-yellow-200'>Full-Stack Web Developer</h3>
-                    <ul className='block max-sm:text-center lg:flex flex-row gap-2 items-center text-white text-[18px] mb-6'><li>Graphic designer</li><span className='hidden md:block text-yellow-200 mx-2'>/</span><li>Programmer</li><span className='hidden md:block text-yellow-200 mx-2'>/</span><li>Software Engineer</li></ul>
+                    <ul className='block max-sm:text-center sm:flex flex-row gap-2 items-center text-white text-[18px] mb-6'><li>Graphic designer</li><span className='hidden sm:block text-yellow-200 mx-2'>/</span><li>Programmer</li><span className='hidden sm:block text-yellow-200 mx-2'>/</span><li>Software Engineer</li></ul>
                     <div className="font-[montserrat] text-[#f3f3f3] pr-3 text-[18px]">
                     {/* Hello! I'm David Alagwu, a passionate and dedicated computer enthusiast. My portfolio showcases a curated selection of my best work, highlighting my skills in tech related fields, design inspirations, and problem-solving. */}
                     </div>
