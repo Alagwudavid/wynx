@@ -70,7 +70,7 @@ export default function Navbar() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               <div className='flex gap-3'>
               <Link
-                to="https://wa.me/+2349045492542?text=I'm%20interested%20in"
+                to="https://wa.me/+2349045492542"
                 className={`text-[#121212] px-4 py-1 text-md font-medium md:block hidden bg-yellow-200 rounded`}
                 ><FontAwesomeIcon icon={faWhatsapp} size='lg'/> Chat</Link>
                 <Link

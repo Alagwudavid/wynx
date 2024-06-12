@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { } from '@fortawesome/free-solid-svg-icons';
 import { socials } from './constants';
@@ -8,6 +8,7 @@ import Sidebar from "./Sidebar"
 import landing1 from '../assets/profile/landing1.png'
 import AnimationWavingHand from "../assets/AnimationWavingHand.json";
 import Lottie from "lottie-react";
+import { faAngleDoubleDown, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 const Hero = () => {
     // const lottieRef = useRef(null);
     // const [paused, setPaused] = useState(false);
@@ -23,8 +24,8 @@ const Hero = () => {
     return (
     <section className="relative h-[80vh] w-full bg-[#121212]">
       <Sidebar />
-            <div className="mx-auto max-w-7xl px-5 pt-[25px] pb-3 sm:px-6 lg:px-8 flex h-full">
-                <div className="w-[760px] max-sm:items-center justify-center mt-10 mb-3 flex flex-col sm:basis-[60%]">
+            <div className="mx-auto max-w-7xl px-5 py-1 flex h-full">
+                <div className="w-[760px] max-sm:items-center justify-center flex flex-col sm:basis-[60%]">
                 {/* <div style={{background: 'linear-gradient(to right, red, purple)'
                 }} className='w-fit p-[3px] rounded-full'>
                     <div className=' py-1 px-3 flex items-center text-white uppercase bg-[#121212] w-fit rounded-full'> Currently open to work</div>

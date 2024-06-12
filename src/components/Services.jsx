@@ -4,10 +4,10 @@ import { faFont, faCode, faDatabase, faHouseLaptop, faBezierCurve, faPenNib, faG
 const Services = () => {
     return (
         <section className="relative w-full bg-[#121212]">
-            <div className="mx-auto max-w-7xl px-5 py-[72px] sm:px-6 lg:px-8 flex flex-col h-full">
+            <div className="mx-auto max-w-7xl px-5 py-12 flex flex-col h-full">
                 <div className='flex items-center flex-col'>
-                    <div className='text-[16px] font-[montserrat] text-white uppercase border-[1px] border-gray-600 rounded-full px-2'><FontAwesomeIcon icon={faGears} className='text-[#727cf5]' size='sm'/> Services</div>
-                    <div className='font-[palanquin] italic mb-5 text-[#666]'>
+                    <div className='text-[16px] font-[montserrat] text-[#727cf5] uppercase border-[1px] border-[#727cf5] rounded-full px-2'><FontAwesomeIcon icon={faGears} className='text-[#727cf5]' size='sm'/> Services</div>
+                    <div className='font-[palanquin] italic mb-5 text-white'>
                         I don't just build websites,
                         i craft experiences
                     </div>

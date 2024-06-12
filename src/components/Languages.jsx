@@ -1,14 +1,14 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHtml5, faCss3, faReact, faSass, faPhp, faLaravel, faSquareJs, faMicrosoft } from '@fortawesome/free-brands-svg-icons';
-import { faGears } from '@fortawesome/free-solid-svg-icons'
+import { faGears, faToolbox } from '@fortawesome/free-solid-svg-icons'
 const Languages = () => {
     return (
         <section className="relative h-fit w-full bg-[#121212]">
-            <div className="mx-auto max-w-7xl px-5 py-[72px] flex flex-col h-full">
+            <div className="mx-auto max-w-7xl px-5 py-20 flex flex-col h-full">
             <div className='flex items-center flex-col'>
-                    <div className='text-[16px] font-[montserrat] text-white uppercase border-[1px] border-gray-600 rounded-full px-2'><FontAwesomeIcon icon={faGears} className='text-[#d3ae42]' size='sm'/> Tools</div>
-                    <div className='font-[palanquin] italic mb-5 text-[#666]'>
+                    <div className='text-[16px] font-[montserrat] text-yellow-200 uppercase border-[1px] border-yellow-200 rounded-full px-2'><FontAwesomeIcon icon={faToolbox} className='text-[#d3ae42]' size='sm'/> Tools</div>
+                    <div className='font-[palanquin] italic mb-5 text-white'>
                        Languages, Frameworks and Tools i work with
                     </div>
                 </div>

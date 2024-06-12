@@ -3,14 +3,10 @@ import Footer from "../components/Footer"
 import Hero from "../components/Hero"
 import Services from "../components/Services"
 import Languages from "../components/Languages"
-import ContactUs from "../components/ContactUs"
-import AlertBox from "../components/AlertBox"
+import Contact from "../components/Contact"
 export default function Home() {
   return (
     <section>
-  {/* <section className=" mb-[45px]">
-    <AlertBox />
-  </section> */}
   <div>
       <Navbar />
   </div>
@@ -24,7 +20,7 @@ export default function Home() {
       <Services />
   </section>
   <section>
-      <ContactUs />
+      <Contact />
   </section>
   <section>
       <Footer />
