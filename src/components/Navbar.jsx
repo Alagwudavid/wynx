@@ -71,7 +71,7 @@ export default function Navbar() {
               <div className='flex gap-3'>
               <Link
                 to="https://wa.me/+2349045492542?text=I'm%20interested%20in"
-                className={`text-white px-2 py-1 text-md font-medium md:block hidden bg-green-400 rounded`}
+                className={`text-[#121212] px-4 py-1 text-md font-medium md:block hidden bg-yellow-200 rounded`}
                 ><FontAwesomeIcon icon={faWhatsapp} size='lg'/> Chat</Link>
                 <Link
                 to="./"
