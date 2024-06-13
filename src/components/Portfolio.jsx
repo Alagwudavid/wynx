@@ -66,7 +66,7 @@ const portfolio = () => {
                             <span className='font-bold text-[22px]'>Python projects</span>
                             <p>A repository made for python projects combined</p>
                             <div className='flex flex-row gap-2'>
-                            <Link to={'https://github.com/Alagwudavid/my_projects_on_python/blob/master/bmi_calculator.py'} className='px-4 py-2 rounded bg-gray-700 w-1/2'><FontAwesomeIcon icon={faGithub}/> Source code</Link>
+                            <Link to={'https://github.com/Alagwudavid/my_projects_on_python/'} className='px-4 py-2 rounded bg-gray-700 w-1/2'><FontAwesomeIcon icon={faGithub}/> Source code</Link>
                             <Link to={'#'} className='px-4 py-2 rounded bg-gray-700 w-1/2 flex justify-center items-center gap-3'>Website <FontAwesomeIcon icon={faAngleRight}/></Link>
                             </div>
                         </div>
