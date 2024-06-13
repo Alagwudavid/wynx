@@ -7,7 +7,7 @@ import bmiThumbnail from '../assets/bmi_thumbnail.png'
 // import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 const portfolio = () => {
     return (
-        <section className="relative w-full bg-[#121212]">
+        <section className="relative w-full bg-[#121212]" id='portfolio'>
             <div className="mx-auto max-w-7xl px-5 py-12 flex flex-col h-full">
                 <div className='flex items-center flex-col'>
                     <span className='text-[16px] font-[montserrat] text-yellow-200 uppercase border-[1px] border-yellow-200 rounded-full px-2'><FontAwesomeIcon icon={faWandMagicSparkles} className='text-[#d3ae42]' size='sm'/> Portfolio</span>

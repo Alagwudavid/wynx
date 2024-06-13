@@ -74,7 +74,7 @@ export default function Navbar() {
                 className={`text-[#121212] px-4 py-1 text-md font-medium md:block hidden bg-yellow-200 rounded`}
                 ><FontAwesomeIcon icon={faWhatsapp} size='lg'/> Chat</Link>
                 <Link
-                to="./"
+                to="../assets/file/DAVID ALAGWU.pdf"
               className={`text-yellow-200 border-yellow-200 px-2 py-1 text-md font-medium md:block hidden rounded-md border-[2px]`}
                 ><FontAwesomeIcon icon={faDownload} size='lg'/> Resume</Link>
               </div>

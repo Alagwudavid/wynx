@@ -12,7 +12,7 @@ const Sidebar = () => {
                 className={`text-white bg-white rounded-full py-2 px-[10px] text-md font-medium sm:block lg:hidden relative`}
                 ><FontAwesomeIcon icon={faDownload} className='text-blue-700' size='lg'/><span className='rounded-full px-1 py-[2px] text-[10px] bg-gray-400 text-black font-bold absolute -top-1 -right-1'>CV</span></Link>
               <Link
-                to="https://wa.me/+2349045492542?text=I'm%20interested%20in"
+                to="https://wa.me/+2349045492542"
                 className={`text-white px-2 py-1 text-md font-medium sm:block lg:hidden bg-green-400 rounded`}
                 ><FontAwesomeIcon icon={faWhatsapp} size='lg'/></Link>
         </div>
