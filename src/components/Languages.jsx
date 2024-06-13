@@ -1,6 +1,6 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHtml5, faCss3, faReact, faSass, faPhp, faLaravel, faSquareJs, faMicrosoft } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3, faReact, faSass, faPhp, faLaravel, faSquareJs, faMicrosoft, faPython } from '@fortawesome/free-brands-svg-icons';
 import { faGears, faToolbox } from '@fortawesome/free-solid-svg-icons'
 const Languages = () => {
     return (
@@ -41,6 +41,12 @@ const Languages = () => {
                             <span className='flex items-center'><FontAwesomeIcon icon={faSass} className='text-[#d44255]' size='2x'/></span>
                             <div className='flex items-center'>
                                 <span className='text-[#d44255] font-bold text-[22px] font-[montserrat]'>Sass</span>
+                            </div>
+                        </div>
+                        <div className='rounded-md flex-shrink-0 flex justify-between flex-row py-2 px-3 gap-3'>
+                            <span className='flex items-center'><FontAwesomeIcon icon={faPython} className='text-yellow-200' size='2x'/></span>
+                            <div className='flex items-center'>
+                                <span className='text-yellow-200 font-bold text-[22px] font-[montserrat]'>Python</span>
                             </div>
                         </div>
                         <div className='rounded-md flex-shrink-0 flex justify-between flex-row py-2 px-3 gap-3'>

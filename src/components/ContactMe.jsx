@@ -7,7 +7,7 @@ import { faMessage, faPhone } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
 import DOMPurify from 'dompurify';
 
-const ContactUs = () => {
+const ContactMe = () => {
   const lottieRef = useRef();
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
@@ -102,4 +102,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default ContactMe;

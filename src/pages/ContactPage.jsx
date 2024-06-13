@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar"
-import ContactUs from "../components/ContactUs"
+import ContactMe from "../components/ContactMe"
 import Footer from "../components/Footer"
 export const ContactPage = () => {
     return ( 
@@ -8,7 +8,7 @@ export const ContactPage = () => {
       <Navbar />
   </section>
   <section>
-      <ContactUs />
+      <ContactMe />
   </section>
   <section>
       <Footer />
