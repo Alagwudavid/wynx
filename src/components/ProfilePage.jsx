@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ProfilePicture from "../assets/profile/profile.jpg"
-import { faArrowLeft, faBookBookmark, faBrain, faBriefcase, faCalendar, faCloudDownload, faLocationPinLock, faMars, faPenNib } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faBookBookmark, faBrain, faBriefcase, faCalendar, faCloudDownload, faLocationPinLock, faMagicWandSparkles, faMars, faPenNib } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { faFacebook, faGithub, faGoogle, faLinkedin, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import CvDoc from "../assets/file/DAVID ALAGWU.pdf"
@@ -43,9 +43,22 @@ const ProfilePage = () => {
                     <div className="block text-[14px] text-black">
                     <span className="bg-blue-700 text-white px-2 py-1">Description:</span>
                     <div className="text-black bg-blue-300 p-2 cursor-default">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, ipsum. Atque illo minus officiis, doloremque quis debitis ratione quidem facilis voluptatum reiciendis doloribus quos laboriosam, aperiam, corporis ullam odit qui? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci quo, voluptatum necessitatibus error, vitae, ea quidem exercitationem voluptatem maxime rerum possimus. Maiores pariatur sint laboriosam voluptates iusto harum suscipit odio?
+                    Hello! I'm Alagwu David, a passionate software engineer. I develop web applications and produce garphic designs. i specualize in many areas and skills and I love to do most of the things using JavaScript. I love to make the web more open to the world. I'm an undergraduate with a pending bachelor's degree in Mechanical Engineering from University of Nigeria, Nsukka, Enugu. I am available for any kind of job opportunity that suits my interests.
                     </div>
                     </div>
+            <hr className="border-gray-500" />
+                    <span className="text-[16px] font-[montserrat] text-black uppercase border-[1px] border-gray-600 rounded-full px-2 flex flex-row w-fit items-center gap-2 cursor-default">
+                    <FontAwesomeIcon icon={faMagicWandSparkles}/>
+                    <h1 className="text-[1.2em] font-bold">Skills</h1>
+                    </span>
+                    <ul className="flex flex-row gap-2">
+                        <li className='text-[18px] font-[montserrat] text-black border-[1px] border-black rounded-full px-2'>Html: 90%</li>
+                        <li className="text-[18px] font-[montserrat] text-black border-[1px] border-black rounded-full px-2">React: 50%</li>
+                        <li className="text-[18px] font-[montserrat] text-black border-[1px] border-black rounded-full px-2">Sass: 90%</li>
+                        <li className="text-[18px] font-[montserrat] text-black border-[1px] border-black rounded-full px-2">Tailwind: 85%</li>
+                        <li className="text-[18px] font-[montserrat] text-black border-[1px] border-black rounded-full px-2">Php: 50%</li>
+                        <li className="text-[18px] font-[montserrat] text-black border-[1px] border-black rounded-full px-2">MySql: 75%</li>
+                    </ul>
                 </div>
             </div>
             <hr className="border-gray-500" />

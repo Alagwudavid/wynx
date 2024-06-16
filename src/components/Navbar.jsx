@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import React, { Fragment, useState, useEffect } from 'react'
 import ProfilePicture from '../assets/profile/profile.jpg'
 import WynxLogo from './wynxLogo';
+import CvDoc from "../assets/file/DAVID ALAGWU.pdf"
 import { navigation } from "./constants"
 import {
   Disclosure,
@@ -74,7 +75,7 @@ export default function Navbar() {
                 className={`text-[#121212] px-4 py-1 text-md font-medium md:block hidden bg-yellow-200 rounded`}
                 ><FontAwesomeIcon icon={faWhatsapp} size='lg'/> Chat</Link>
                 <Link
-                to="../assets/file/DAVID ALAGWU.pdf"
+                to={CvDoc} target='blank'
               className={`text-yellow-200 border-yellow-200 px-2 py-1 text-md font-medium md:block hidden rounded-md border-[2px]`}
                 ><FontAwesomeIcon icon={faDownload} size='lg'/> Resume</Link>
               </div>

@@ -12,6 +12,6 @@ export const socials = [
 export const navigation = [
     { name: 'Home', href: '/', current: true },
     { name: 'About', href: '/profile', current: false },
-    { name: 'Portfolio', href: '#portfolio', current: false },
     { name: 'Contact', href: '/contact-us', current: false },
+    { name: 'Blog', href: '#coming-soon', current: false },
   ]
