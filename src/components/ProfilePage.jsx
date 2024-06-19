@@ -101,13 +101,13 @@ const ProfilePage = () => {
                     <div className="flex flex-col gap-1">
                         <span className="text-black font-bold">TSCO Software Services</span>
                         <div className="flex flex-row items-center gap-2">
-                        <p className="text-[14px]"><FontAwesomeIcon icon={faCalendar} className="text-black"/> (Jun - Aug) 2022</p>
+                        <p className="text-[14px]"><FontAwesomeIcon icon={faCalendar} className="text-black"/> (Jun - Aug) 2023</p>
                         <span className="w-[1px] h-[1px] bg-gray-700 p-[1.5px] rounded-full block"></span>
                         <p className="text-[14px]"><FontAwesomeIcon icon={faLocationPinLock}className="text-black"/> (Remote) Nigeria</p>
                         </div>
                         <div className="flex flex-row items-center gap-3 text-[14px] text-black">
                         <span className="bg-black text-white px-2 py-1">Position:</span>
-                        <span className="uppercase">Front-end developer</span>
+                        <span className="uppercase">Front-End developer</span>
                         </div>
                     </div>
                     <div className="flex flex-col gap-1">
