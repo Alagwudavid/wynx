@@ -19,10 +19,10 @@ import {
 import {
   BarsArrowDownIcon,
   BarsArrowUpIcon,
-  ChevronDoubleDownIcon,
-  ChevronDoubleUpIcon,
-  ChevronDownIcon,
-  ChevronUpIcon,
+  // ChevronDoubleDownIcon,
+  // ChevronDoubleUpIcon,
+  // ChevronDownIcon,
+  // ChevronUpIcon,
 } from "@heroicons/react/24/outline";
 import { faDownload, faHandsClapping } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";

@@ -160,7 +160,7 @@ const ProfilePage = () => {
               <FontAwesomeIcon icon={faMagicWandSparkles} />
               <h1 className="text-[1.2em] font-bold">Skills</h1>
             </span>
-            <ul className="flex flex-row gap-2">
+            <ul className="flex flex-row gap-2 flex-wrap">
               <li className="rounded-full border-[1px] border-black px-2 font-[montserrat] text-[18px] text-black">
                 Html: 90%
               </li>
