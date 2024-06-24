@@ -3,22 +3,22 @@ const nodemailer = require('nodemailer');
 const cors = require('cors');
 const mysql = require('mysql2');
 const jwt = require('jsonwebtoken');
-const bcrypt = require('bcryptjs');
+// const bcrypt = require('bcryptjs');
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
+
+require('dotenv').config();
 
 app.use(cors());
 app.use(express.json({ limit: "25mb" }));
 app.use(express.urlencoded({ limit: "25mb" }));
 
-require('dotenv').config();
-
 // Database connection
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'wynx_db'
+    host: process.env.DB_HOST || 'localhost',
+    user: process.env.DB_USER || 'root',
+    password: process.env.DB_PASS || '',
+    database: process.env.DB_NAME || 'wynx_db'
 });
 
 db.connect(err => {
@@ -67,40 +67,17 @@ app.post("/contact-us", (req, res) => {
         .catch((error) => res.status(500).send(error.message));
 });
 
-// // Register endpoint
-// app.post('/register', async (req, res) => {
-//     const { username, password } = req.body;
-//     const hashedPassword = await bcrypt.hash(password, 10);
-//     db.query('INSERT INTO users (username, password) VALUES (?, ?)', [username, hashedPassword], (err) => {
-//         if (err) return res.status(500).send(err);
-//         res.sendStatus(201);
-//     });
-// });
-
-// // Login endpoint
-// app.post('/login', (req, res) => {
-//     const { username, password } = req.body;
-//     db.query('SELECT * FROM users WHERE username = ?', [username], async (err, results) => {
-//         if (err) return res.status(500).send(err);
-//         if (results.length === 0 || !(await bcrypt.compare(password, results[0].password))) {
-//             return res.status(401).send('Invalid credentials');
-//         }
-//         const token = jwt.sign({ id: results[0].id }, 'secret', { expiresIn: '1h' });
-//         res.json({ token });
-//     });
-// });
-
 // Middleware to authenticate
 const authenticate = (req, res, next) => {
     const token = req.headers['authorization'];
     if (!token) return res.sendStatus(401);
-    jwt.verify(token, 'secret', (err, user) => {
+    jwt.verify(token, process.env.JWT_SECRET || 'secret', (err, user) => {
         if (err) return res.sendStatus(403);
         req.user = user;
         next();
     });
 };
 
-// app.listen(port, () => {
-//     console.log(`Server is listening at http://localhost:${port}`);
-// });
+app.listen(port, () => {
+    console.log(`Server is listening at http://localhost:${port}`);
+});
