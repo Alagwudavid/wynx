@@ -67,28 +67,28 @@ app.post("/contact-us", (req, res) => {
         .catch((error) => res.status(500).send(error.message));
 });
 
-// Register endpoint
-app.post('/register', async (req, res) => {
-    const { username, password } = req.body;
-    const hashedPassword = await bcrypt.hash(password, 10);
-    db.query('INSERT INTO users (username, password) VALUES (?, ?)', [username, hashedPassword], (err) => {
-        if (err) return res.status(500).send(err);
-        res.sendStatus(201);
-    });
-});
+// // Register endpoint
+// app.post('/register', async (req, res) => {
+//     const { username, password } = req.body;
+//     const hashedPassword = await bcrypt.hash(password, 10);
+//     db.query('INSERT INTO users (username, password) VALUES (?, ?)', [username, hashedPassword], (err) => {
+//         if (err) return res.status(500).send(err);
+//         res.sendStatus(201);
+//     });
+// });
 
-// Login endpoint
-app.post('/login', (req, res) => {
-    const { username, password } = req.body;
-    db.query('SELECT * FROM users WHERE username = ?', [username], async (err, results) => {
-        if (err) return res.status(500).send(err);
-        if (results.length === 0 || !(await bcrypt.compare(password, results[0].password))) {
-            return res.status(401).send('Invalid credentials');
-        }
-        const token = jwt.sign({ id: results[0].id }, 'secret', { expiresIn: '1h' });
-        res.json({ token });
-    });
-});
+// // Login endpoint
+// app.post('/login', (req, res) => {
+//     const { username, password } = req.body;
+//     db.query('SELECT * FROM users WHERE username = ?', [username], async (err, results) => {
+//         if (err) return res.status(500).send(err);
+//         if (results.length === 0 || !(await bcrypt.compare(password, results[0].password))) {
+//             return res.status(401).send('Invalid credentials');
+//         }
+//         const token = jwt.sign({ id: results[0].id }, 'secret', { expiresIn: '1h' });
+//         res.json({ token });
+//     });
+// });
 
 // Middleware to authenticate
 const authenticate = (req, res, next) => {
@@ -101,6 +101,6 @@ const authenticate = (req, res, next) => {
     });
 };
 
-app.listen(port, () => {
-    console.log(`Server is listening at http://localhost:${port}`);
-});
+// app.listen(port, () => {
+//     console.log(`Server is listening at http://localhost:${port}`);
+// });

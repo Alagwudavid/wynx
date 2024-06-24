@@ -1,6 +1,6 @@
 # Personal Brand Portfolio Website
 
-![Project Screenshot](src/assets/screenshot.jpg)
+![Project Screenshot](src/assets/screenshot_wynx.jpg)
 
 ### website: <a href='https://www.wynx.vercel.app'>www.wynx.vercel.app</a>
 
