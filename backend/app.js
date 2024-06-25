@@ -79,5 +79,5 @@ const authenticate = (req, res, next) => {
 };
 
 app.listen(port, () => {
-    console.log(`Server is listening at http://localhost:${port}`);
+    console.log(`Server is listening at https://wynx.vercel.app`);
 });
