@@ -146,7 +146,7 @@ const ProfilePage = () => {
               </span>
               <div className="cursor-default bg-blue-300 p-2 text-black">
                 Hello! I'm Alagwu David, a passionate software engineer. I
-                develop web applications and produce garphic designs. i
+                develop web applications and produce graphic designs. i
                 specualize in many areas and skills and I love to do most of the
                 things using JavaScript. I love to make the web more open to the
                 world. I'm an undergraduate with a pending bachelor's degree in
