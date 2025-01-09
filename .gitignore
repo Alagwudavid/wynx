@@ -25,5 +25,5 @@ dist-ssr
 
 # Personal files
 *.env
-.vite/
+.vite/**/ */
 .vercel
