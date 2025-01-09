@@ -1,7 +1,9 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHtml5, faCss3, faReact, faSass, faPhp, faLaravel, faSquareJs, faMicrosoft, faPython, faTailwindCss } from '@fortawesome/free-brands-svg-icons';
-import { faToolbox } from '@fortawesome/free-solid-svg- width="17" height="10"
+import { faHtml5, faCss3, faReact, faSass, faPhp, faLaravel, faSquareJs, faMicrosoft, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faToolbox } from '@fortawesome/free-solid-svg-icons'
+import TailwindCss from "./tailwindCss";
+
 const Languages = () => {
     return (
         <section className="relative h-fit w-full bg-[#121212]">
