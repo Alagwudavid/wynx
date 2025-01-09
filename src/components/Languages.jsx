@@ -1,7 +1,7 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHtml5, faCss3, faReact, faSass, faPhp, faLaravel, faSquareJs, faMicrosoft, faPython, faTailwindCss } from '@fortawesome/free-brands-svg-icons';
-import { faToolbox } from '@fortawesome/free-solid-svg-icons'
+import { faToolbox } from '@fortawesome/free-solid-svg- width="17" height="10"
 const Languages = () => {
     return (
         <section className="relative h-fit w-full bg-[#121212]">
@@ -26,7 +26,7 @@ const Languages = () => {
                             </div>
                         </div>
                         <div className='rounded-md flex-shrink-0 flex justify-between flex-row py-2 px-3 gap-3'>
-                            <span className='flex items-center'><FontAwesomeIcon icon={faTailwindCss} className='text-blue-600' size='2x'/></span>
+                            <span className='flex items-center'><TailwindCss /></span>
                             <div className='flex items-center'>
                                 <span className='text-blue-600 font-bold text-[22px] font-[montserrat]'>Tailwind Css</span>
                             </div>
