@@ -28,7 +28,7 @@ const Languages = () => {
                             </div>
                         </div>
                         <div className='rounded-md text-blue-600 flex-shrink-0 flex justify-between flex-row py-2 px-3 gap-3'>
-                            <span className='flex items-center'><TailwindCss /></span>
+                            <span className='flex items-center justify-center'><TailwindCss /></span>
                             <div className='flex items-center'>
                                 <span className='font-bold text-[22px] font-[montserrat]'>Tailwind Css</span>
                             </div>
