@@ -27,10 +27,10 @@ const Languages = () => {
                                 <span className='text-[#6fbfff] font-bold text-[22px] font-[montserrat]'>CSS3</span>
                             </div>
                         </div>
-                        <div className='rounded-md flex-shrink-0 flex justify-between flex-row py-2 px-3 gap-3'>
+                        <div className='rounded-md text-blue-600 flex-shrink-0 flex justify-between flex-row py-2 px-3 gap-3'>
                             <span className='flex items-center'><TailwindCss /></span>
                             <div className='flex items-center'>
-                                <span className='text-blue-600 font-bold text-[22px] font-[montserrat]'>Tailwind Css</span>
+                                <span className='font-bold text-[22px] font-[montserrat]'>Tailwind Css</span>
                             </div>
                         </div>
                         <div className='rounded-md flex-shrink-0 flex justify-between flex-row py-2 px-3 gap-3'>

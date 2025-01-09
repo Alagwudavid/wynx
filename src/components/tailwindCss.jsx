@@ -5,15 +5,12 @@ const TailwindCss = (props) => (
     xmlSpace="preserve"
     width="2rem"
     height="2rem"
-    fill="#ffffff"
+    fill="currentColor"
     style={{
-      shapeRendering: "geometricPrecision",
-      textRendering: "geometricPrecision",
-      imageRendering: "optimizeQuality",
       fillRule: "evenodd",
       clipRule: "evenodd",
     }}
-    viewBox="0 0 1216.19 324.31"
+    viewBox="0 0 16 16"
     xmlnsXlink="http://www.w3.org/1999/xlink"
     {...props}
   >
