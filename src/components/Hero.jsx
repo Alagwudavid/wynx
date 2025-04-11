@@ -44,7 +44,7 @@ const Hero = () => {
                     </div>
                     <div className="flex space-x-4">
                     {socials.map((item) => (
-                        <a key={item.label} href={item.href} aria-label={item.label} className={`text-${item.color}`} >
+                        <a key={item.label} href={item.href} aria-label={item.label} className={`text-${item.color} hover:text-white`} >
                         <FontAwesomeIcon icon={item.icon} size="xl"/>
                         </a>
                     ))}
