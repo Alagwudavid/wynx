@@ -33,7 +33,7 @@ const portfolio = () => {
                             </div>
                             </div>
                             <span className='font-bold text-[22px]'>Ecommerce website</span>
-                            <p>A modern and seamless online shopping experience built with Vite and Tailwind CSS. The platform offers a fast, responsive, and visually appealing interface, ensuring a smooth and enjoyable browsing experience.</p>
+                            <p className='text-justify mb-2'>A modern and seamless online shopping experience built with Vite and Tailwind CSS. The platform offers a fast, responsive, and visually appealing interface, ensuring a smooth and enjoyable browsing experience.</p>
                             <div className='flex flex-row gap-2'>
                             <Link to={'https://github.com/Alagwudavid/momo'} className='px-4 py-2 hover:text-blue-600 rounded-2xl bg-gray-700 hover:bg-[#2b2f34] transition-colors w-1/2'><FontAwesomeIcon icon={faGithub}/> Source code</Link>
                             <Link to={'https://momo-marketplace.vercel.app'} target='blank' className='px-4 py-2 hover:text-blue-600 rounded-2xl bg-gray-700 hover:bg-[#2b2f34] transition-colors w-1/2 flex justify-center items-center gap-3'>Website <FontAwesomeIcon icon={faAngleRight}/></Link>
@@ -56,7 +56,7 @@ const portfolio = () => {
                             </div>
                             </div>
                             <span className='font-bold text-[22px]'>Portfolio website</span>
-                            <p>A modern portfolio website built with Vite and Tailwind CSS. The platform offers a fast, responsive, and visually appealing interface, ensuring a smooth and enjoyable browsing experience.</p>
+                            <p className='text-justify mb-2'>A modern portfolio website built with Vite and Tailwind CSS. The platform offers a fast, responsive, and visually appealing interface, ensuring a smooth and enjoyable browsing experience.</p>
                             <div className='flex flex-row gap-2'>
                             <Link to={'https://github.com/Alagwudavid/wynx'} className='px-4 py-2 hover:text-blue-600 rounded-2xl bg-gray-700 hover:bg-[#2b2f34] transition-colors w-1/2'><FontAwesomeIcon icon={faGithub}/> Source code</Link>
                             <Link to={'https://wynx.vercel.app'} target='blank' className='px-4 py-2 hover:text-blue-600 rounded-2xl bg-gray-700 hover:bg-[#2b2f34] transition-colors w-1/2 flex justify-center items-center gap-3'>Website <FontAwesomeIcon icon={faAngleRight}/></Link>
@@ -75,7 +75,7 @@ const portfolio = () => {
                             </div>
                             </div>
                             <span className='font-bold text-[22px]'>Simple Python Calculator</span>
-                            <p>Just another CLI interactive, nice and simple Python Calculator. Does all basic calculations!</p>
+                            <p className='text-justify mb-2'>Just another CLI interactive, nice and simple Python Calculator. Does all basic calculations!</p>
                             <div className='flex flex-row gap-2'>
                             <Link to={'https://github.com/Alagwudavid/my_projects_on_python/blob/master/simple_calculator.py'} className='px-4 py-2 hover:text-blue-600 rounded-2xl bg-gray-700 hover:bg-[#2b2f34] transition-colors w-1/2'><FontAwesomeIcon icon={faGithub}/> Source code</Link>
                             <Link to={'/#no-link'} className='px-4 py-2 hover:text-blue-600 rounded-2xl bg-gray-700 hover:bg-[#2b2f34] transition-colors w-1/2 flex justify-center items-center gap-3'>Website <FontAwesomeIcon icon={faAngleRight}/></Link>
@@ -94,7 +94,7 @@ const portfolio = () => {
                             </div>
                             </div>
                             <span className='font-bold text-[22px]'>Simple BMI Calculator</span>
-                            <p>Body Mass Index (BMI) is a person's weight in kilograms divided by the square of height in meters. A high BMI can indicate high body fatness!</p>
+                            <p className='text-justify mb-2'>Body Mass Index (BMI) is a person's weight in kilograms divided by the square of height in meters. A high BMI can indicate high body fatness!</p>
                             <div className='flex flex-row gap-2'>
                             <Link to={'https://github.com/Alagwudavid/my_projects_on_python/blob/master/bmi_calculator.py'} className='px-4 py-2 hover:text-blue-600 rounded-2xl bg-gray-700 hover:bg-[#2b2f34] transition-colors w-1/2'><FontAwesomeIcon icon={faGithub}/> Source code</Link>
                             <Link to={'/#no-link'} className='px-4 py-2 hover:text-blue-600 rounded-2xl bg-gray-700 hover:bg-[#2b2f34] transition-colors w-1/2 flex justify-center items-center gap-3'>Website <FontAwesomeIcon icon={faAngleRight}/></Link>
@@ -114,7 +114,7 @@ const portfolio = () => {
                                 <span className='text-[12px] font-[montserrat] text-yellow-200 border-[1px] border-yellow-200 rounded-full px-2'><FontAwesomeIcon icon={faFolder}/> repository</span>
                             </div>
                             <span className='font-bold text-[22px]'>Python projects</span>
-                            <p>A repository made for python projects combined</p>
+                            <p className='text-justify mb-2'>A repository made for python projects combined</p>
                             <div className='flex flex-row gap-2'>
                             <Link to={'https://github.com/Alagwudavid/my_projects_on_python/'} className='px-4 py-2 hover:text-blue-600 rounded-2xl bg-gray-700 hover:bg-[#2b2f34] transition-colors w-1/2'><FontAwesomeIcon icon={faGithub}/> Source code</Link>
                             <Link to={'/#no-link'} className='px-4 py-2 hover:text-blue-600 rounded-2xl bg-gray-700 hover:bg-[#2b2f34] transition-colors w-1/2 flex justify-center items-center gap-3'>Website <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></Link>
