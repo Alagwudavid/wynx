@@ -72,7 +72,7 @@ export default function Navbar() {
                         to={item.href}
                         className={classNames(
                           item.current
-                            ? "text-white"
+                            ? "text-white hover:text-yellow-200 transition duration-500 ease-out"
                             : "text-black transition duration-500 ease-in-out",
                           "rounded-md px-3 py-2 text-sm font-medium",
                           "text-white",

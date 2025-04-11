@@ -1,7 +1,9 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHtml5, faCss3, faReact, faSass, faPhp, faLaravel, faSquareJs, faMicrosoft, faPython } from '@fortawesome/free-brands-svg-icons';
-import { faGears, faToolbox } from '@fortawesome/free-solid-svg-icons'
+import { faToolbox } from '@fortawesome/free-solid-svg-icons'
+import TailwindCss from "./tailwindCss";
+
 const Languages = () => {
     return (
         <section className="relative h-fit w-full bg-[#121212]">
@@ -23,6 +25,12 @@ const Languages = () => {
                             <span className='flex items-center'><FontAwesomeIcon icon={faCss3} className='text-[#6cbfff]' size='2x'/></span>
                             <div className='flex items-center'>
                                 <span className='text-[#6fbfff] font-bold text-[22px] font-[montserrat]'>CSS3</span>
+                            </div>
+                        </div>
+                        <div className='rounded-md text-blue-600 flex-shrink-0 flex justify-between flex-row py-2 px-3 gap-3'>
+                            <span className='flex items-center justify-center'><TailwindCss /></span>
+                            <div className='flex items-center'>
+                                <span className='font-bold text-[22px] font-[montserrat]'>Tailwind Css</span>
                             </div>
                         </div>
                         <div className='rounded-md flex-shrink-0 flex justify-between flex-row py-2 px-3 gap-3'>
@@ -70,11 +78,6 @@ const Languages = () => {
                         <div className='rounded-md flex-shrink-0 flex justify-between py-2 px-3'>
                             <div className='flex items-center'>
                                 <span className='text-[red] font-bold text-[22px] font-[montserrat]'>ADOBE Packages</span>
-                            </div>
-                        </div>
-                        <div className='rounded-md flex-shrink-0 flex justify-between py-2 px-3'>
-                            <div className='flex items-center'>
-                                <span className='font-bold text-orange-500 text-[22px] font-[montserrat]'>Blender</span>
                             </div>
                         </div>
                 </div>

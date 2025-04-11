@@ -1,7 +1,7 @@
 {
   "name": "wynx",
   "private": true,
-  "version": "0.0.0",
+  "version": "25.1.09",
   "type": "module",
   "scripts": {
     "dev": "vite",
